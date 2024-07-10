@@ -34,8 +34,19 @@ header {
 }
 
 .why-web-development {
+  background: url("images/Hero-bg.png") no-repeat center center/cover;
+  color: white; /* Adjust the text color for better contrast */
   text-align: center;
-  padding: 50px 20px;
+  padding: 50px 20px; /* Adjust padding as needed */
+}
+
+.why-web-development img {
+  display: none; /* Hide the original image element */
+}
+
+.why-web-development h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .reasons {
@@ -48,8 +59,25 @@ header {
   width: 30%;
   margin: 10px;
   padding: 20px;
-  background-color: #f4f4f4;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background for better readability */
+  border-radius: 10px;
   text-align: center;
+  box-sizing: border-box;
+}
+
+.reason h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.reason p {
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 .inspiration {
