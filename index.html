@@ -3,26 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Developer Poftfolio</title>
+    <title>Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="section-banner">
-      <div class="banner-items">
+    <!-- Navbar -->
+    <header class="header">
+      <nav class="nav">
+        <h1 class="logo">Awlad.h</h1>
+        <ul class="nav-links">
+          <li><a href="#button" class="nav-link">Download Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
         <img
-          class="banner-image"
+          class="hero-image"
           src="./Assets/images/Group.png"
           alt="Group.png"
         />
-        <h1 class="banner-tittle">
+        <h1 class="hero-title">
           "In the near future, I hope to become a Developer."
         </h1>
-        <p class="banner-paragraph">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
+        <p class="hero-paragraph">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text.
         </p>
-        <button class="button-primary">Contact with me</button>
+        <button class="btn-primary">Contact Me</button>
       </div>
     </section>
+    <!-- End Hero Section -->
+
+    <!-- Container for Sections -->
+    <div class="container-sections">
+      <!-- Why Web Dev Section -->
+      <section class="why-web-dev">
+        <div class="why-web-dev-content">
+          <h2 class="section-title">Why Web Development?</h2>
+          <p class="section-paragraph">
+            Web development is crucial in today's digital age. It allows me to
+            create innovative solutions and reach a global audience.
+          </p>
+        </div>
+      </section>
+      <!-- End Why Web Dev Section -->
+
+      <!-- I Will Do Section -->
+      <section class="i-will-do">
+        <div class="i-will-do-content">
+          <h3 class="subsection-title">
+            I Will Do Coding and Change The World
+          </h3>
+          <p class="subsection-paragraph">
+            By leveraging web technologies, I aim to create impactful
+            applications that solve real-world problems.
+          </p>
+          <button class="btn-secondary">Learn More</button>
+        </div>
+        <div class="i-will-do-image">
+          <img src="./Assets/images/Layer_1.png" alt="Layer.png" />
+        </div>
+      </section>
+      <!-- End I Will Do Section -->
+    </div>
+    <!-- End Container for Sections -->
   </body>
 </html>
