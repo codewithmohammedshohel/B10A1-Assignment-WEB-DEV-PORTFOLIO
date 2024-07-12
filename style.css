@@ -15,47 +15,39 @@ body {
 }
 
 /* Header styles */
-.header {
-  background-color: #0d1321;
-  color: #fff;
+header {
+  background-color: #f0f0f0;
 }
-
-/* Navbar styles */
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+  
 }
 
 .logo {
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 28px;
-  letter-spacing: 0%;
-  text-align: left;
-  color: #fff;
-}
-
-.navbar-links {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-link {
-  text-decoration: none;
-  color: #fff;
+  font-size: 1.5rem;
   font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 8px;
-  opacity: 0.8;
-  transition: all 0.3s ease;
 }
 
-.navbar-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.btn-download {
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  background:red
+  transition: background-color 0.3s, color 0.3s;
 }
+
+.btn-download:hover {
+  background-color: white;
+  color: #333;
+}
+
 
 /* Hero section styles */
 .hero-section {
@@ -318,4 +310,146 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+}
+
+/* My next  section styles */
+.next-target .next-content{
+  text-align: center;
+  background-color: transparent;
+}
+.next-target-skills {
+  background-color: rgba(255, 255, 255, 0.712);
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 16px;
+  padding: 45px;
+  margin: 45px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  display: flex; */
+  /* align-content: left; */
+  flex-direction:left;
+  /* align-items: left; */
+  gap: 20px;
+}
+
+.next-title {
+  font-size: 32px;
+  font-weight: bold;
+  
+}
+
+.section-paragraph {
+  font-size: 20px;
+  /* max-width: 600px; */
+}
+
+
+/* support section css */
+
+
+.support-section {
+  background: url('./Assets/images/handshake.jpg') no-repeat center center/cover;
+  width: 100%;
+  /* max-width: 800px;
+  height: 400px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.support-content {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 10px;
+  width: 80%;
+  /* max-width: 600px; */
+}
+
+.support-content h1 {
+  font-size: 2em;
+  margin: 0 0 10px 0;
+}
+
+.support-content p {
+  font-size: 1em;
+  margin: 0 0 20px 0;
+}
+
+.support-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.support-form input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  /* width: 70%; */
+  /* max-width: 300px; */
+  outline: none;
+}
+
+.support-form button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #ecebf0;
+  color: #000;
+  cursor: pointer;
+}
+
+.support-form button:hover {
+  background-color: #ddd;
+}
+
+/* support section css ends */
+
+/* footer css */
+
+#footer-section {
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+  opacity: 0.7;
 }
