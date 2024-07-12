@@ -1,12 +1,12 @@
-/* Importing Google Font */
-@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100..900&display=swap");
-
 /* Resetting default styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Importing Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100..900&display=swap");
 
 /* Body styles */
 body {
@@ -18,50 +18,47 @@ body {
 .header {
   background-color: #0d1321;
   color: #fff;
-  padding: 10px 20px;
 }
 
-.nav {
+/* Navbar styles */
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px;
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
-  line-height: 33px;
+  line-height: 28px;
   letter-spacing: 0%;
   text-align: left;
+  color: #fff;
 }
 
-.nav-links {
+.navbar-links {
   list-style-type: none;
   display: flex;
+  gap: 20px;
 }
 
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-link {
+.navbar-link {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
   padding: 10px 20px;
-  border: 1px solid transparent; /* Transparent border initially */
   border-radius: 8px;
   opacity: 0.8;
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease;
 }
 
-.nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
-  border-color: #fff; /* White border on hover */
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Hero section styles */
-.hero {
+.hero-section {
   background: url("./Assets/images/Hero-bg.png") no-repeat center center;
   background-size: cover;
   padding: 100px 0;
@@ -95,11 +92,17 @@ body {
   background-color: #1a1f2b;
 }
 
-/* Why Web Dev section styles */
-.why-web-dev {
-  background-color: #fff;
-  padding: 80px 20px;
-  text-align: center;
+/* Main container styles */
+.main-container {
+  align-items: center;
+  padding: 20px 97px 80px 97px;
+  border-radius: 16px;
+  background: rgba(13, 19, 33, 0.02);
+}
+
+/* Section styles */
+.section-content {
+  padding: 0 20px;
 }
 
 .section-title {
@@ -115,17 +118,16 @@ body {
 }
 
 /* I Will Do section styles */
-.i-will-do {
+.i-will-do,
+.i-will-help,
+.i-will-do-change {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
-}
-
-.i-will-do-content {
-  flex: 1;
-  text-align: left;
-  padding: 0 20px;
+  background-color: rgb(255, 253, 253);
+  border-radius: 20px;
+  padding: 40px;
 }
 
 .subsection-title {
@@ -154,17 +156,166 @@ body {
   background-color: #1a1f2b;
 }
 
-.i-will-do-image img {
+.i-will-do .section-image,
+.i-will-help .section-image,
+.i-will-do-change .section-image {
+  flex: 1;
+}
+
+.i-will-do .section-image img,
+.i-will-help .section-image img,
+.i-will-do-change .section-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Container for all sections  */
-.container-sections {
-  max-width: 1200px;
-  margin: 0 20px auto;
-  padding: 0px 20px; /* Adjusted padding for a balanced look */
-  background: rgba(13, 19, 33, 0.02);
+/* Inspiration section styles */
+.inspiration {
+  background-color: rgba(255, 255, 255, 0.712);
+  padding: 45px;
+  text-align: center;
   border-radius: 16px;
+  top-margin: 45px;
+}
+
+.inspiration .section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.inspiration .section-paragraph {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Video section styles */
+.video-container {
+  text-align: center;
+  margin-top: 60px;
+  border: 5px;
+  border-radius: 2px;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 16px;
+}
+
+/* Why Web Dev section styles */
+.why-web-dev {
+  background-color: rgba(255, 255, 255, 0.712);
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.why-web-dev .section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.why-web-dev .section-paragraph {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 20px 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-paragraph {
+    font-size: 16px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .subsection-title {
+    font-size: 24px;
+  }
+
+  .subsection-paragraph {
+    font-size: 14px;
+  }
+
+  .video-container iframe {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-paragraph {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .subsection-title {
+    font-size: 20px;
+  }
+
+  .subsection-paragraph {
+    font-size: 12px;
+  }
+}
+
+/* skills section styles */
+.skills-container {
+  display: flex;
+  gap: 24px;
+}
+
+.skill {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+/* My Current section styles */
+.current-target {
+  background-color: rgba(255, 255, 255, 0.712);
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 16px;
+  padding: 45px;
+  margin: 45px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.section-paragraph {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
